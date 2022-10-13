@@ -1,0 +1,12 @@
+Statik ve Dinamik Kütüphaneler
+Yazılım kütüphaneleri, daha sonra yeni geliştirilecek yazılımlara dahil edilmek üzere saklanan derlenmiş hazır kod ve veri dosyalarıdır. Bazı sebeplerden dolayı kütüphaneler önceden derlenmiş olarak bulunurlar. İlk sebep, kütüphanelerin nadiren değişmesidir. Kullanıldıkları her bir program için kütüphanelerin yeniden derlenmesi vakit kaybı olurdu. İkinci bir sebep de derlenmiş (makine koduna dönüştürülmüş) oldukları için dışarıdan müdahale edilememesidir. Bu da iş dünyası söz konusu olduğunda ya da kişiler çeşitli sebeplerle kodlarını açmak istemediklerinde önem kazanmaktadır.
+
+    Statik Kütüphaneler
+Statik kütüphaneler, yeniden derlenmeye ihtiyaç duymaksızın yazılıma derleme aşamasında yani çalıştırılmadan önce eklenir. Bir programı statik kütüphane kullanacak şekilde derlediğinizde, programının kütüphanenin bütün işlevselliğine sahip olur. Statik kütüphane dosyalarının uzantıları ".a" şeklindedir. Statik kütüphaneleri kullanmanın bir avantajı programınızı tek bir çalıştırılabilir dosya şeklinde dağıtmanızı sağlamasıdır. Ayrıca kütüphane, programınızın bir parçası olduğu için her zaman doğru versiyonun kullanıldığından emin olursunuz. Diğer taraftan kütüphanenin her programa eklenmesi hafıza israfına yol açmaktadır. Ayrıca statik kütüphanelerin güncellenmesi de pek kolay değildir. Bunun için tüm programın yeniden derlenmesi gerekir.
+
+    Dinamik Kütüphaneler
+Dinamik (shared-paylaşımlı) kütüphaneler ise programa çalışma sırasında dahil edilirler. Programınızı dinamik kütüphane kullanacak şekilde derlediğinizde, kütüphane programa o anda dahil edilmez, programa kod eklenmez. Uzantıları ".so" şeklindedir. Bu şekilde farklı programlar aynı kütüphaneyi ortak olarak kullanırlar ve bu sayede program boyutları daha küçülmüş olur. Ayrıca güncelleme yapmak için de kütüphaneyi kullanan tüm programların yeniden derlenmesi gerekmeyeceği için işlem daha kolaydır.
+
+Kaynaklar:http://www.belgeler.org/howto/gcc-baslangic-libs.html
+http://www.learncpp.com/cpp-tutorial/a1-static-and-dynamic-libraries/
+
